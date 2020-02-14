@@ -16,6 +16,6 @@ salmon index -t athal.fa.gz -i athal_index
 
 for read in ./*_1.fastq
 do
-	salmon quant -i athal_index -l A -1 $read -2 ${read::-7}2.fastq -p 8 --validateMappings -o quants/${read::-8}.sf
+	salmon quant -i athal_index -l A -1 $read -2 ${read::-7}2.fastq -p 8 --validateMappings -o quants/${read::-8}
 done
 
